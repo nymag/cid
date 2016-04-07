@@ -1,6 +1,6 @@
 {
   "name": "@nymag/cid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates a unique id on the client. Uses timestamp, random number, and increments.",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
