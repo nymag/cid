@@ -2,7 +2,7 @@
 
 [![Circle CI](https://circleci.com/gh/nymag/cid.svg?style=svg)](https://circleci.com/gh/nymag/cid)
 
-🎲Generates a unique id on the client. Uses timestamp, random number, and increments.
+🎲 Generates a unique id on the client. Uses timestamp, random number, and increments.
 
 ## Install
 
