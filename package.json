@@ -1,0 +1,36 @@
+{
+  "name": "@nymag/cid",
+  "version": "0.0.1",
+  "description": "Generates a unique id on the client. Uses timestamp, random number, and increments.",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --compilers js:babel-register test.js",
+    "build-es5": "babel src --out-dir dist",
+    "clean": "rimraf dist && mkdirp dist",
+    "build": "npm run clean && npm run build-es5",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nymag/cid.git"
+  },
+  "keywords": [
+    "clay",
+    "cid"
+  ],
+  "author": "New York Media",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nymag/cid/issues"
+  },
+  "homepage": "https://github.com/nymag/cid#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.2"
+  }
+}
