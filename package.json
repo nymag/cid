@@ -6,7 +6,7 @@
   "jsnext:main": "src/index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --compilers js:babel-register test.js",
-    "build-es5": "babel src --out-dir dist",
+    "build-es5": "node_modules/.bin/babel src --out-dir dist",
     "clean": "rimraf dist && mkdirp dist",
     "build": "npm run clean && npm run build-es5",
     "prepublish": "npm run build"
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/nymag/cid#readme",
   "devDependencies": {
     "babel": "^6.5.2",
+    "babel-cli": "^6.6.5",
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "mkdirp": "^0.5.1",
